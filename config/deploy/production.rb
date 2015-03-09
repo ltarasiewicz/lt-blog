@@ -22,3 +22,5 @@ server 'tarasiewicz.net', user: 'deploy', roles: %w{web app db}
 
 fetch(:default_env).merge!(wp_env: :production)
 
+set :wpcli_remote_url, 'http://tarasiewicz.net'
+set :wpcli_local_url, 'http://tarasiewicz.local'
